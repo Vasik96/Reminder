@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Připomínky</string>
+
+    <string name="title_home">Domů</string>
+    <string name="title_settings">Nastavení</string>
+    <string name="notes">Poznámky</string>
+
+    <string name="reminder_field">Připomínka</string>
+    <string name="reminder_dialog_title">Nová Připomínka</string>
+    <string name="add_fabcontent">Přidat</string>
+    <string name="app_theme">Motiv aplikace</string>
+    <string name="language_setting">Vybrat jazyk</string>
+    <string name="cancel_txt">Zrušit</string>
+
+    <string name="system_default">Systém (Výchozí)</string>
+    <string name="dark">Tmavý</string>
+    <string name="light">Světlý</string>
+
+    <string name="snackbar_reminder_scheduled">Připomínka byla naplánována</string>
+    <string name="snackbar_reminder_edited">Připomínka byla upravena</string>
+
+    <string name="delete_reminder_dialog_title">Smazat připomínku?</string>
+    <string name="question_txt_delete">Opravdu chcete tuto připomínku smazat?</string>
+    <string name="delete_button">Smazat</string>
+
+    <string name="done_txt">Hotovo</string>
+    <string name="not_done_txt">Nedokončeno</string>
+
+    <string name="reminder_details_dialog">Podrobnosti Připomínky</string>
+    <string name="reminder_details_date">Datum</string>
+    <string name="reminder_details_time">Čas</string>
+    <string name="reminder_status_dialog">Stav</string>
+
+    <string name="theme_dialog">Vybrat Motiv</string>
+
+    <string name="edit_error">Tuto připomínku nelze upravit, zkuste to znovu později</string>
+
+    <string name="txt_daily">Denní</string>
+    <string name="txt_weekly">Týdenní</string>
+    <string name="txt_monthly">Měsíční</string>
+    <string name="txt_3months">Čtvrtletní</string>
+    <string name="txt_yearly">Roční</string>
+    <string name="txt_onetime">Pouze jednou</string>
+    <string name="reminder_type">Typ připomínky</string>
+
+    <string name="already_exists">Připomínka s tímto názvem již existuje!</string>
+    <string name="required_field_error">Toto je povinné.</string>
+
+    <string name="confirm_txt">Potvrdit</string>
+
+    <string name="appwidget_text">Načítání…</string>
+    <string name="add_widget">Přidat widget</string>
+    <string name="app_widget_description">Nejbližší Připomínka</string>
+
+    <string name="no_upcoming_reminders">Žádné nadcházející připomínky</string>
+    <string name="closest_reminder">Připomínka</string>
+
+    <string name="related_apps">Podobné Aplikace</string>
+
+    <string name="google_calendar">Google Kalendář</string>
+
+    <string name="searchbar_hint">Hledat</string>
+
+    <string name="common_error">Tato akce není nyní dostupná</string>
+
+    <string name="amoled_theme">Amoled motiv</string>
+
+    <string name="edit_button_tooltip">Upravit</string>
+
+
+
+    <string name="categorization_all">Vše</string>
+    <string name="categorization_daily">Denní</string>
+    <string name="categorization_weekly">Týdenní</string>
+    <string name="categorization_monthly">Měsíční</string>
+    <string name="categorization_3months">Čtvrtletní</string>
+    <string name="categorization_yearly">Roční</string>
+    <string name="categorization_onetime">Jednorázový</string>
+    <string name="settings_bk_restore">Zálohovat a Obnovit (pouze připomínky)</string>
+
+    <string name="export_btn">Exportovat</string>
+    <string name="import_btn">Importovat</string>
+
+    <string name="export_success">Export byl úspěšný</string>
+    <string name="import_success">Import byl úspěšný</string>
+
+    <string name="notes_txt_hint">Něco sem napiš…</string>
+    <string name="save">Uložit</string>
+    <string name="save_success">Poznámky byly úspěšně uloženy</string>
+
+    <string name="clean">Vyčistit</string>
+    <string name="nothing_to_delete">Žádná připomínka k smazání</string>
+    <string name="clean_reminders">Smazat dokončené?</string>
+    <string name="description_cleanup">Tímto trvale odstraníte všechny jednorázové připomenutí označené jako hotové. Tuto akci nelze vrátit zpět.</string>
+    <string name="cleanup_success">Připomínky byly vyčištěny</string>
+
+</resources>

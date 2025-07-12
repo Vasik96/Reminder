@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="Widget.Reminder.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.Reminder.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Reminder.Text.AppBar" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/moderustic</item>
+        <item name="android:fontFamily">@font/moderustic</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="titleCentered">true</item>
+        <item name="titleTextColor">?attr/colorPrimary</item>
+        <item name="titleTextAppearance">@style/Reminder.Text.AppBar</item>
+    </style>
+
+
+
+    <style name="Theme.Reminder.DeleteButtonStyle" parent="Widget.Material3Expressive.Button.TextButton.Dialog">
+        <item name="android:textColor">?colorError</item>
+    </style>
+
+
+    <style name="Theme.Reminder.DeleteDialog" parent="ThemeOverlay.Material3Expressive.MaterialAlertDialog.Centered">
+        <item name="buttonBarPositiveButtonStyle">@style/Theme.Reminder.DeleteButtonStyle</item>
+
+
+    </style>
+
+</resources>

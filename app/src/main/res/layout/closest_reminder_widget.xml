@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Reminder.AppWidget.Container"
+    android:id="@android:id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="@style/Theme.Reminder.AppWidgetContainer">
+
+    <!-- Closest Reminder -->
+    <TextView
+        android:id="@+id/appwidget_label"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/closest_reminder"
+        android:textColor="@color/widget_title"
+        android:drawableStart="@drawable/app_icon"
+        android:drawableTint="@color/material_dynamic_neutral70"
+        android:drawablePadding="12dp"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- divider -->
+    <!-- !!! nejde pouzit attr pro pozadi, jinak se widget nenacte -->
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/appwidget_label"
+        android:layout_marginTop="4dp"
+        android:background="@color/divider_color" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/appwidget_reminder_name"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:drawableStart="@drawable/ic_event"
+        android:drawableTint="@color/material_dynamic_neutral70"
+        android:drawablePadding="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/appwidget_text"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/appwidget_reminder_date"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appwidget_reminder_name"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawableTint="@color/material_dynamic_neutral70"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/appwidget_text"
+        android:textSize="14sp" />
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/appwidget_reminder_time"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appwidget_reminder_date"
+        android:drawableStart="@drawable/ic_time"
+        android:drawableTint="@color/material_dynamic_neutral70"
+        android:gravity="center_vertical"
+        android:drawablePadding="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/appwidget_text"
+        android:textSize="14sp" />
+</RelativeLayout>

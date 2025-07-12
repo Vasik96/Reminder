@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            style="@style/Reminder.Text.AppBar"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/title_settings" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/language_setting"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="0dp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/language_setting"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:textAllCaps="false"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/language_icon"
+        android:drawableEnd="@drawable/open_in_new_icon"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/app_theme"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="0dp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/app_theme"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:textAllCaps="false"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_paint"
+        android:drawableEnd="@drawable/arrow_forward"
+        app:layout_constraintTop_toBottomOf="@id/language_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="gone"
+        android:id="@+id/print_json"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="0dp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="print json"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:textAllCaps="false"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/dark_mode"
+        android:drawableEnd="@drawable/arrow_forward"
+        app:layout_constraintTop_toBottomOf="@id/app_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider1"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/app_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/divider1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="start"
+        android:text="@string/settings_bk_restore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/export_file"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="0dp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/export_btn"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:textAllCaps="false"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_backup"
+        android:drawableEnd="@drawable/open_in_new_icon"
+        app:layout_constraintTop_toBottomOf="@id/divider1_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/import_file"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:elevation="0dp"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/import_btn"
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="16sp"
+        android:gravity="start|center"
+        android:textAllCaps="false"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_arrow_down"
+        android:drawableEnd="@drawable/open_in_new_icon"
+        app:layout_constraintTop_toBottomOf="@id/export_file"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
